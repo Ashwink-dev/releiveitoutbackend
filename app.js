@@ -17,28 +17,28 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 app.use('/api', (req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:4200');
+  res.header('Access-Control-Allow-Origin', 'https://relieveitoutfrontend.herokuapp.com/');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'GET,POST,DELETE,PUT');
   next();
 });
 
 app.use('/apiappointment', (req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:4200');
+  res.header('Access-Control-Allow-Origin', 'https://relieveitoutfrontend.herokuapp.com/');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'GET,POST,DELETE,PUT');
   next();
 });
 
 app.use('/apirating', (req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:4200');
+  res.header('Access-Control-Allow-Origin', 'https://relieveitoutfrontend.herokuapp.com/');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'GET,POST,DELETE,PUT');
   next();
 });
 
 app.use('/apicrisisline', (req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'http://localhost:4200');
+  res.header('Access-Control-Allow-Origin', 'https://relieveitoutfrontend.herokuapp.com/');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
   res.header('Access-Control-Allow-Methods', 'GET,POST,DELETE,PUT');
   next();
